@@ -1,0 +1,59 @@
+// Mixins
+// --------------------------------------------------
+
+
+//PERSONAL
+@mixin bs($box: border-box) {
+    box-sizing: $box;
+}
+
+@mixin transition($what:all, $speed:500ms, $style:ease) {
+    -webkit-transition: $what $speed $style;
+    -moz-transition: $what $speed $style;
+    -ms-transition: $what $speed $style;
+    -o-transition: $what $speed $style;
+    transition: $what $speed $style;
+}
+
+@mixin user-select($select:none) {
+    -webkit-user-select: $select;
+    -moz-user-select: $select;
+    -ms-user-select: $select;
+    -o-user-select: $select;
+    user-select: $select;
+}
+
+@mixin opacity($decimal:1) {
+    $percent: $decimal * 100;
+    filter: alpha(opacity=$percent);
+    -moz-opacity: $decimal;
+    -khtml-opacity: $decimal;
+    opacity: $decimal;
+}
+
+@mixin translateY($y:-50%) {
+    -ms-transform: translateY($y);
+    -webkit-transform: translateY($y);
+    transform: translateY($y);
+}
+@mixin translateX($x:-50%) {
+    -ms-transform: translateX($x);
+    -webkit-transform: translateX($x);
+    transform: translateX($x);
+}
+@mixin translateXY($x:-50%, $y:-50%){
+    -ms-transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+@mixin rotate($r:90deg) {
+    -ms-transform: rotate($r);
+    -webkit-transform: rotate($r);
+    transform: rotate($r);
+}
+@mixin origin($x:50%,$y:50%){
+    -ms-transform-origin: $x $y; 
+    -webkit-transform-origin: $x $y;
+    transform-origin: $x $y;
+
+}
