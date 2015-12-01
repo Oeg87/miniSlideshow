@@ -19,6 +19,7 @@
                 $items = $(this).find(settings.item),
                 numItems = $items.length, // total number of slides
                 isPaused = true;
+                
             // this function showing the next or previous slide and hiding all the others
             //////////////////////////////////////////
             var showCurrent = function() {
@@ -41,14 +42,13 @@
                 $(this).hover(function(e) {
                     e.preventDefault();
                     isPaused = true;
-                    console.log('in mouseover false')
 
                 }, function(e) {
                     e.preventDefault();
                     isPaused = false;
-                    console.log('out mouseover false')
                 });
             }
+
             //setTimeout == Loop
             ///////////////////////////////////////////
             var t = window.setInterval(function() {
@@ -59,26 +59,19 @@
                 }
             }, settings.speed);
 
-
             //start Slideshow in Hover 
             //////////////////////////////////////////
-
             if (settings.mouseHover == true) {
 
                 $(this).hover(function(e) {
                     e.preventDefault();
                     isPaused = false;
-                    console.log('in')
 
                 }, function(e) {
                     e.preventDefault();
                     isPaused = true;
-                    console.log('out')
                 });
             }
-
-
-
 
             // if touch events are supported then add swipe interactions using TouchSwipe https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
             //////////////////////////////////////////
