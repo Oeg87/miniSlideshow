@@ -1,12 +1,8 @@
 (function($) {
-
-    console.log('ciao')
-        /////////////////////////////////////////////////////
-        // Hover slideshow
-        /////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////
+    // Hover slideshow
+    /////////////////////////////////////////////////////
     if ($.fn.slideshowHover) {
-        console.log('true')
-
         $('.gallery--slideshow').slideshowHover({
             item: '.gallery__link',
             speed: 2000,
@@ -14,8 +10,5 @@
             swipeOn: false,
             hover: true
         });
-
     }
-
-
 }(jQuery));
