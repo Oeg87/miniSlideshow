@@ -6,7 +6,7 @@
   position: relative;
   display: block;
   overflow: hidden; }
-  .gallery--slideshow .gallery__link {
+  .gallery--slideshow .gallery__item {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
     transition: opacity 2s ease;
     z-index: 1;
     outline: 0; }
-    .gallery--slideshow .gallery__link:hover {
+    .gallery--slideshow .gallery__item:hover {
       border: 0; }
   .gallery--slideshow .show {
     position: relative;

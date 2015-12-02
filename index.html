@@ -14,19 +14,19 @@
     <div class="gallery">
         <!--slideshow img-->
         <figure class="figure gallery--slideshow gallery__thumbnails">
-            <div class="gallery__link show">
+            <div class="gallery__item show">
                 <img class="img--responsive" src="http://lorempixel.com/400/200/sports/1" alt="placeholder" />
             </div>
-            <div class="gallery__link">
+            <div class="gallery__item">
                 <img class="img--responsive" src="http://lorempixel.com/400/200/sports/2" alt="placeholder" />
             </div>
-            <div class="gallery__link">
+            <div class="gallery__item">
                 <img class="img--responsive" src="http://lorempixel.com/400/200/sports/3" alt="placeholder" />
             </div>
-            <div class="gallery__link">
+            <div class="gallery__item">
                 <img class="img--responsive" src="http://lorempixel.com/400/200/sports/5" alt="placeholder" />
             </div>
-            <div class="gallery__link">
+            <div class="gallery__item">
                 <img class="img--responsive" src="http://lorempixel.com/400/200/sports/6" alt="placeholder" />
             </div>
             <figcaption class="figure__caption">
@@ -48,7 +48,7 @@
         if ($.fn.slideshowHover) {
 
             $('.gallery--slideshow').slideshowHover({
-                item: '.gallery__link',
+                item: '.gallery__item',
                 speed: 2000,
                 show: 'show',
                 swipeOn: false,

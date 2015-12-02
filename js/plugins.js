@@ -5,7 +5,7 @@
     $.fn.slideshowHover = function(options) {
         //default options
         var settings = $.extend({
-            item: '.gallery__link',
+            item: '.gallery__item',
             speed: 1000,
             show: 'show',
             swipeOn: false,
@@ -19,7 +19,7 @@
                 $items = $(this).find(settings.item),
                 numItems = $items.length, // total number of slides
                 isPaused = true;
-                
+
             // this function showing the next or previous slide and hiding all the others
             //////////////////////////////////////////
             var showCurrent = function() {
@@ -33,7 +33,7 @@
                 $items.eq(itemToShow).addClass(settings.show);
 
             };
-            
+
             //Start loaded page
             //////////////////////////////////////////
             if (settings.mouseHover == false) {
@@ -72,6 +72,7 @@
                     isPaused = true;
                 });
             }
+
 
             // if touch events are supported then add swipe interactions using TouchSwipe https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
             //////////////////////////////////////////
