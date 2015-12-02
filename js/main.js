@@ -8,7 +8,7 @@
             speed: 2000,
             show: 'show',
             swipeOn: false,
-            hover: true
+            mouseHover: true
         });
     }
 }(jQuery));
